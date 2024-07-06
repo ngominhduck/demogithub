@@ -1,0 +1,139 @@
+
+/* GLOBAL  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    font-family: "Lato", sans-serif;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.heading P{
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #4b4a4b;
+    margin-bottom: 10px;
+}
+.spacing{
+    padding: 85px 20px;
+}
+/* HEADER  */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.header ul{
+    margin: 0;
+}
+.nav__item{
+    z-index: 999;
+}
+header > nav > ul > li{
+    list-style: none;
+}
+header > nav > ul > li:hover{
+    background-color: #be0404;
+}
+header > nav > ul > li:hover a{
+    color: #000;
+}
+header > nav > ul > li:hover i{
+    color: #000;
+}
+header nav ul{
+    display: flex;
+}
+
+header nav >ul a{
+    text-decoration: none;
+    padding: 12px 24px;
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+header nav >ul a:hover a{
+    color: #000 ;
+}
+.header__search > i{
+    color:  #fff;
+    /* 1 rem =(font-size hiện tại px) */
+    /* 1.1 rem = 16*1.1 px */
+    font-size: 1.1rem;
+    padding: 14px 24px;
+}
+.header__search > i:hov {
+    background-color: #000;
+}
+.nav__more{
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* do mo 0 --> 1  */
+    opacity: 0;
+}
+.nav__more .nav__item{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 150%;
+}
+.nav__more > a{
+    padding-right: 5px;
+}
+.nav__more > i{
+    color: #fff;
+    padding-right: 24px;
+}
+
+.nav__more .nav__item a{
+    color: #000;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px;
+}
+/* CAROUSEL  */
+.carouselTheBand .carousel item{   
+    height: 700px;
+}
+
+/* THE BAND */
+.band_content{
+    max-width: 800px;
+    margin:0 auto;
+}
+.band_content > p{
+    text-align: justify;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+.band_member{
+    display: flex;
+    justify-content: space-around;
+}
+.band_item{
+    width: 160px;
+}
+.band_item h5{
+    font-size: 1rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.band_item img{
+    width: 100%;
+}
